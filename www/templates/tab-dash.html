@@ -1,0 +1,24 @@
+<ion-view view-title="Flight Plan">
+  <ion-content class="padding" ng-controller="DashCtrl">
+    <div id="form" style="width:100%; height:20%">
+        <form class="list" id="vADD-form1">
+            <label id="vADD-input2" class="item item-input item-stacked-label">
+                <span class="input-label">First Address</span>
+                <input placeholder="City, Country" type="text" id="address1" ng-model="From">
+            </label>
+            <label id="vADD-input1" class="item item-input item-stacked-label">
+                <span class="input-label">Second Address</span>
+                <input placeholder="City, Country" type="text" id="address2" ng-model="To">
+            </label>
+        </form>
+        <button class="button button-positive button-small button-block" style="border-radius:10px 10px 10px 10px;" id="vADD-button1" ng-click="initialize()">Show</button>
+    </div>
+    <div class="spacer" style="width: 250px; height: 100px;"></div>
+    <div style="width:100%; height:10%" id="distance_direct"></div>
+    <div style="width:100%; height:10%" id="distance_road"></div>
+    <div class="spacer" style="width: 250px; height: 30px;"></div>
+    <div id="map_canvas" style="width:100%; height:70%"></div>    
+    <div class="spacer" style="width: 250px; height: 30px;"></div>
+    <button ui-sref="simulator" class="button button-positive button-small button-block" style="border-radius:10px 10px 10px 10px;" id="vADD-button1">Send Flight Plan</button>
+  </ion-content>
+</ion-view>
